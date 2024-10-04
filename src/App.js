@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='wrapper clear'>
+			<header className='d-flex justify-between align-center p-40'>
+				<div className='d-flex aling-center'>
+					<img width={'40'} height={'40'} src='/img/logo.png' alt='logo'></img>
+					<div>
+						<h3 className='text-uppercase'>React Sneakers</h3>
+						<p className='opacity-3'>Магазин лучших кроссовок</p>
+					</div>
+				</div>
+				<ul className='d-flex'>
+					<li className='mr-30'>
+						<img
+							width={'18'}
+							height={'18'}
+							src='/img/cart.svg'
+							alt='logo'
+						></img>
+						<span>1205р.</span>
+					</li>
+					<li>
+						<img
+							width={'18'}
+							height={'18'}
+							src='/img/user.svg'
+							alt='logo'
+						></img>
+					</li>
+				</ul>
+			</header>
+			<div className='content p-40'>
+				<h1 className='mb-40'>Все кроссовки</h1>
+				<div className='card'>
+					<img width={133} height={112} src='/sneakers/1.jpg' alt='sneakers' />
+					<h5>Мужские кроссовки Nike Blazer Mid Suede</h5>
+					<div className='d-flex justify-between align-center'>
+						<div className='d-flex flex-column'>
+							<span>Цена:</span>
+							<b>12 999 руб.</b>
+						</div>
+						<button className='button'>
+							<img width={11} height={11} src='/img/btn-plus.svg' alt='' />
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	)
 }
 
-export default App;
+export default App
